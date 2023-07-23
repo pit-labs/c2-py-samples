@@ -26,6 +26,9 @@ c2 = C2(
         # The private key defines the user address that owns the commitments
         # and the corresponding C2 datasets and records.
         private_key=env_vars["PRIVATE_KEY"],
+        # This setting should be set for the appropriate chain
+        # and is configured in the .env file.
+        inject_geth_poa_middleware=env_vars["INJECT_GETH_POA_MIDDLEWARE"],
     )
 )
 
