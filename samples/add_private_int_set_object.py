@@ -55,8 +55,8 @@ object_hash = C2PrivateIntSeries.get_object_hash_for_dataset_record(
 # Since we are merely adding a record to a dataset,
 # we just need to create a writable dataset
 # that receives the new record commitment.
-# The caller must retain this data to verify the commitment record
-# at a later time.
+# The caller can retrain the receipt to verify the commitment record later.
+# All receipts are also available via C2 indexing services.
 receipt = c2.add_set_object(
     set_hash=c2.get_named_set_hash(DATASET_NAME),
     object_hash=object_hash,

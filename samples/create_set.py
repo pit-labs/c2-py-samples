@@ -42,6 +42,7 @@ C2 operations
 receipt = c2.add_named_set(DATASET_NAME)
 # The returned receipt contains information on the set commitment.
 # It can be optionally retained to simplify subsequent validation.
+# All receipts are also available via C2 indexing services.
 # Since add_set() calls are idempotent,
 # duplicate calls will be noops and will return an empty receipt.
 print("add_named_set() receipt: ")

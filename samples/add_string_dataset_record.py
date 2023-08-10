@@ -31,8 +31,8 @@ C2 operations
 ds = C2StringSeries(c2, DATASET_NAME)
 
 # Add a record to the dataset.
-# The caller must retain this data to verify the commitment record
-# at a later time.
+# The caller can retrain the receipt to verify the commitment record later.
+# All receipts are also available via C2 indexing services.
 receipt = ds.add_record(record="TestRecord")
 print("c2ds.add_record() receipt: ")
 pprint.pprint(receipt)
